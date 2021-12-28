@@ -1,0 +1,2 @@
+/home/renchy/04_makefile/22/03/build/main/main.o /home/renchy/04_makefile/22/03/build/main/main.dep : src/main.c /home/renchy/04_makefile/22/03/common/inc/common.h \
+ inc/main.h

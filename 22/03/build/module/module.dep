@@ -1,0 +1,2 @@
+/home/renchy/04_makefile/22/03/build/module/module.o /home/renchy/04_makefile/22/03/build/module/module.dep : src/module.c /home/renchy/04_makefile/22/03/common/inc/common.h \
+ inc/module.h

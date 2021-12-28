@@ -1,0 +1,20 @@
+TARGET := hello-world.out
+CC := g++
+
+$(TARGET): func.o main.o
+	$(CC) -o $@ $^
+
+func.o : func.c
+	$(CC) -o $@ -c $^
+main.o : main.c
+	$(CC) -o $@ -c $^
+
+.PHONY : clean rebuild all
+#clean :
+#	rm -rf *.o hello.out
+clean : FORCE
+	rm -rf *.o $(TARGET) 
+FORCE : 
+rebuild : clean all
+
+all : $(TARGET)

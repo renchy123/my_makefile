@@ -1,0 +1,24 @@
+.PHONY : test
+
+define func1
+	@echo "My name is $(0)"
+endef 
+
+define func2
+	@echo "My name is $(0)"
+endef
+
+func3 := @echo "My name is $(0)"
+
+var1 :=  $(call func1)
+var2 :=  $(call func2)
+var3 :=  $(call func3)
+var4 := $(abspath ./)
+var5 := $(abspath ./renchy.txt)
+
+test :
+	@echo "var1 => $(var1)"
+	@echo "var2 => $(var2)"
+	@echo "var3 => $(var3)"
+	@echo "var4 => $(var4)"
+	@echo "var5 => $(var5)"

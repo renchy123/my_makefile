@@ -1,0 +1,1 @@
+/home/renchy/04_makefile/22/03/build/common/common.o /home/renchy/04_makefile/22/03/build/common/common.dep : src/common.c inc/common.h

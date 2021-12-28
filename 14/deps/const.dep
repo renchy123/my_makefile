@@ -1,0 +1,1 @@
+objs/const.o deps/const.dep : const.c
